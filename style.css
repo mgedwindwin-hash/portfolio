@@ -23,16 +23,26 @@ body {
     color: #e0d8c3;
 }
 
+/* Liens du menu de navigation */
 .main-nav a {
     color: #e0d8c3;
     text-decoration: none;
     margin: 0 12px;
     font-size: 14px;
-    transition: color 0.3s;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
 }
 
-.main-nav a:hover, .main-nav a.active {
-    text-decoration: underline;
+/* Effet au survol des liens (couleur orange) */
+.main-nav a:hover {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+/* Page active */
+.main-nav a.active {
+    border-bottom: 2px solid #ffffff;
     color: #ffffff;
 }
 
@@ -56,7 +66,7 @@ body {
     color: #d6ccb8;
 }
 
-/* Bannière dorée/marron */
+/* Bannière de séparation */
 .divider-banner {
     height: 25px;
     background-color: #7a5833;
@@ -89,8 +99,9 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Survol des cartes (bordure et texte orange) */
 .grid-card:hover {
-    background-color: #7a5833;
-    color: #ffffff;
+    border-color: #ff8c00;
+    color: #ff8c00;
     transform: translateY(-2px);
 }
