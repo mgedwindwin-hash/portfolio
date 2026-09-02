@@ -253,10 +253,36 @@ body {
     padding: 0;
 }
 
+/* --- Modifiez ce bloc existant dans style.css --- */
 .task-list li {
     background-color: #7a5833;
     color: #fff;
     padding: 12px 16px;
     margin-bottom: 10px;
     border-radius: 4px;
+    
+    /* --- Ajoutez ces lignes pour l'animation --- */
+    opacity: 0;                    /* Invisible au départ */
+    transform: translateX(20px);    /* Décalé à droite */
+    animation: fadeRight 0.5s ease forwards; /* Lancement de l'animation */
+}
+
+/* --- Ajoutez ce bloc de cascade (Staggered animation) juste après --- */
+/* Chaque élément a son propre délai pour créer un effet de cascade */
+.task-list li:nth-child(1) { animation-delay: 0.1s; }
+.task-list li:nth-child(2) { animation-delay: 0.2s; }
+.task-list li:nth-child(3) { animation-delay: 0.3s; }
+.task-list li:nth-child(4) { animation-delay: 0.4s; }
+/* Si vous en avez plus, continuez la logique li:nth-child(5)... */
+
+/* --- Ajoutez la définition de l'animation Keyframes tout à la fin de style.css --- */
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Position normale */
+    }
 }
