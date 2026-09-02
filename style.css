@@ -386,22 +386,22 @@ body {
 }
 
 .info-card {
-    background-color: #ffffff;
+    background-color: #ffffff;  /* Fond blanc */
     border-radius: 8px;
     padding: 24px 30px;
-    text-align: left;
+    text-align: center;         /* Aligne le texte au centre */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .info-card h3 {
-    color: #1a1816;
+    color: #1a1816;             /* Titre foncé pour contraster avec le blanc */
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .info-card p {
-    color: #333333;
+    color: #333333;             /* Texte foncé */
     font-size: 14px;
     margin: 0;
     line-height: 1.5;
