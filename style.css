@@ -757,17 +757,25 @@ body {
     transform: translateY(-2px);
 }
 
+/* Définition des variables héritées de ton thème */
 #documents {
+  --doc-bg: var(--card-bg, #1a1a1a);
+  --doc-header-bg: var(--header-bg, #252525);
+  --doc-hover-bg: var(--hover-bg, #2a2a2a);
+  --doc-border: var(--border-color, #333333);
+  --doc-text: var(--text-color, #ffffff);
+  --doc-text-muted: var(--text-muted, #a0a0a0);
+  --doc-accent: var(--accent-color, #007acc);
+
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #e0e0e0;
+  color: var(--doc-text);
 }
 
 #documents h2 {
   text-align: center;
-  color: #ffffff;
+  color: var(--doc-text);
   margin-bottom: 25px;
   font-size: 1.8rem;
 }
@@ -776,27 +784,63 @@ body {
 #documents table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1e1e1e;
+  background-color: var(--doc-bg);
+  border: 1px solid var(--doc-border);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* En-tête du tableau */
 #documents th {
-  background-color: #2a2d32;
-  color: #00bcd4;
+  background-color: var(--doc-header-bg);
+  color: var(--doc-text);
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 1px;
   padding: 15px;
   text-align: left;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--doc-border);
 }
 
-/* Cellules du tableau */
+/* Cellules */
 #documents td {
   padding: 14px 15px;
-  border-bottom: 1px solid #2d2d2d;
+  border-bottom: 1px solid var(--doc-border);
   font-size: 0.95rem;
+}
+
+/* Survol des lignes */
+#documents tbody tr:hover {
+  background-color: var(--doc-hover-bg);
+}
+
+/* Liens des PDF */
+#documents a {
+  color: var(--doc-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+#documents a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Séparateur et note */
+#documents hr {
+  border: none;
+  height: 1px;
+  background-color: var(--doc-border);
+  margin: 30px 0 20px 0;
+}
+
+#documents blockquote {
+  background-color: var(--doc-header-bg);
+  border-left: 4px solid var(--doc-accent);
+  margin: 0;
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+  color: var(--doc-text-muted);
+  font-size: 0.9rem;
 }
