@@ -143,17 +143,20 @@ body {
 
 .cv-btn {
     display: inline-block;
+    background-color: #7a5833;  /* Fond marron */
+    color: #ffffff;             /* Texte blanc */
     border: 1px solid #7a5833;
-    color: #e0d8c3;
-    padding: 8px 24px;
+    padding: 10px 28px;
     border-radius: 8px;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cv-btn:hover {
-    background-color: #7a5833;
-    color: #fff;
+    background-color: #5a3f23;  /* Marron plus foncé au survol */
+    border-color: #5a3f23;
+    transform: scale(1.05);      /* Légère animation au survol */
 }
 
 /* Points Forts (Jauges) */
