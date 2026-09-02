@@ -331,6 +331,36 @@ body {
 }
 
 .accordion-container {
+    .accordion-item,
+.accordion-header {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    border-left: 4px solid #e6c687 !important;
+    border-radius: 8px !important;
+    margin-bottom: 15px !important;
+    padding: 20px !important;
+}
+
+/* Titre des blocs (ex: Gérer le patrimoine informatique) */
+.accordion-header,
+.accordion-title,
+.accordion-container h3,
+.accordion-container button {
+    color: #e6c687 !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    text-align: left !important;
+}
+
+/* Texte descriptif dans les blocs */
+.accordion-content,
+.accordion-container p,
+.accordion-container span {
+    color: #cccccc !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+}
     display: flex;
     flex-direction: column;
     gap: 15px;
