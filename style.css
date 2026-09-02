@@ -68,9 +68,16 @@ body {
 
 /* Bannière de séparation */
 .divider-banner {
-    height: 25px;
-    background-color: #7a5833;
-    width: 100%;
+    width: 100vw;               /* Prend toute la largeur de la fenêtre */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;        /* Annule les marges des conteneurs parents */
+    margin-right: -50vw;
+    height: 30px;               /* Épaisseur de la bande (ajustable si besoin) */
+    background-color: #7a5833;  /* Couleur marron de votre thème */
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Grille de cartes */
