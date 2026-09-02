@@ -289,3 +289,88 @@ body {
         transform: translateX(0); /* Position normale */
     }
 }
+
+/* --- Page Compétences --- */
+
+.skills-hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skills-hero h2 {
+    color: #c29968;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.skills-category {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.category-badge {
+    display: inline-block;
+    background-color: #7a5833;
+    color: #000;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    background-color: #221f1c;
+    border: 1px solid #332d27;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    color: #e0d8c3;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none; /* Masque la flèche par défaut du HTML */
+}
+
+.accordion-header::-webkit-details-marker {
+    display: none; /* Masque la flèche Safari/Chrome */
+}
+
+.accordion-header .icon {
+    color: #c29968;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Changement de l'icône lors de l'ouverture */
+.accordion-item[open] .icon {
+    transform: rotate(45deg); /* Le '+' pivote pour former une croix/moins */
+}
+
+.accordion-content {
+    padding: 0 24px 20px 24px;
+    color: #b5a895;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 5px;
+    padding-top: 15px;
+}
