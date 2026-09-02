@@ -105,3 +105,158 @@ body {
     color: #ff8c00;
     transform: translateY(-2px);
 }
+
+/* Page À Propos */
+.about-hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.side-title {
+    color: #7a5833;
+    font-size: 20px;
+    max-width: 300px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text .subtitle {
+    color: #d6ccb8;
+    margin-bottom: 20px;
+}
+
+.cv-section {
+    padding: 20px 0;
+    background-color: #1a1816;
+}
+
+.cv-btn {
+    display: inline-block;
+    border: 1px solid #7a5833;
+    color: #e0d8c3;
+    padding: 8px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background-color: #7a5833;
+    color: #fff;
+}
+
+/* Points Forts (Jauges) */
+.skills-section {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.section-title {
+    color: #7a5833;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.skill-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.skill-label {
+    width: 150px;
+    font-size: 18px;
+}
+
+.bar-bg {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #888;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #7a5833;
+}
+
+/* Bandeau défilant centres d'intérêt */
+.interests-header {
+    color: #7a5833;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.ticker-wrap {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.ticker {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Section Expériences */
+.experiences-section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.main-exp-title {
+    color: #7a5833;
+    font-size: 32px;
+}
+
+.exp-card {
+    margin: 30px 0;
+}
+
+.exp-card h3 {
+    color: #7a5833;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.exp-subtitle, .exp-company {
+    color: #c2b59b;
+    margin: 2px 0;
+}
+
+.exp-desc {
+    margin-top: 15px;
+    color: #d6ccb8;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #7a5833;
+    color: #fff;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
